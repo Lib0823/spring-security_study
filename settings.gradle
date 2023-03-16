@@ -14,13 +14,14 @@ rootProject.name = 'sp-fastcampus-spring-sec'
         if(!gradleFile.exists()){
             gradleFile.text =
                     """
-                    
+
                     dependencies {
-                
+
                     }
-                
+
                     """.stripIndent(20)
         }
+
         [
                 "src/main/java/com/sp/fc",
                 "src/main/resources",
@@ -38,4 +39,3 @@ rootProject.name = 'sp-fastcampus-spring-sec'
         project(projectName).projectDir = subDir
     }
 }
-
